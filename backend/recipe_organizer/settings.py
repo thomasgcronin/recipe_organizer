@@ -59,6 +59,7 @@ WSGI_APPLICATION = 'recipe_organizer.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 MEDIA_ROOT = BASE_DIR + '/apps/recipes/media/photos'
+print MEDIA_ROOT
 
 MEDIA_URL = '/media/'
 
