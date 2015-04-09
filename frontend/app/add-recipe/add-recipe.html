@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="row recipe-column-container" >
+
+            <div class="col-md-6 recipe-column1">
+
+                <label class="form-group">Recipe Name
+                    <br>
+                    <input class="form-control" ng-model="recipe.name">
+                </label>
+                <br>
+                <br>
+
+                <label class="form-group">Recipe Description
+                    <br>
+                    <textarea class="form-control" ng-model="recipe.description"></textarea>
+                </label>
+                <br>
+                <br>
+
+                <label class="form-group">Recipe Directions
+                    <br>
+                    <textarea class="form-control" ng-model="recipe.directions"></textarea>
+                </label>
+                <br>
+                <br>
+            </div>
+            <div class="col-md-6 recipe-column2">
+
+                <label class="form-group">Ingredients
+                    <br>
+                    <input class="form-control" ng-model="ingredientName">
+                </label>
+                <br>
+                <button class="btn btn-primary btn-md" ng-click="addIngredientToRecipe(ingredientName)">Add
+                    ingredient to recipe
+                </button>
+                <br>
+
+                <p>Your ingredients:</p>
+                <ol>
+                    <li ng-repeat="ingredient in recipe.ingredients">{{ ingredient.name }}</li>
+                </ol>
+
+                <button class="btn btn-success btn-md" ng-click="addRecipe()">Save New Recipe</button>
+            </div>
+        </div>
+    </div>
+</div>

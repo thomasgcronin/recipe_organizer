@@ -1,0 +1,123 @@
+/* sets base style for each page */
+
+html {
+ webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;;
+}
+
+body {
+  background-image: url(img/white-kitchen.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#background-home {
+
+}
+
+.menu {
+
+  table-layout: fixed;
+  width: 90%;
+  margin: 0 5%;
+  font-family: "OPEN SANS";
+  font-size: 24px;
+
+
+
+}
+
+.menu-container {
+  width: 100%;
+  margin-top: 53px;
+  background-color: #00142f;
+  padding-top: 3px;
+  padding-bottom: 5px;
+
+
+
+}
+
+.menu td{
+   text-align: center;
+}
+
+.recipe-column1{
+  padding-left: 5%;
+  font-family: "OPEN SANS";
+  color: #008000;
+
+}
+
+.recipe-column2{
+  padding-left: 1%;
+  font-family: "OPEN SANS";
+  color: #008000;
+  text-shadow: 5px 5px 0 #000,
+
+
+}
+
+.recipe-column-container{
+
+  margin-top:80px;
+  font-family: "OPEN SANS";
+  font-color: #ffffff;
+  font-size: larger;
+  font-weight: 300;
+  font-style: normal;
+  padding-left: 22%
+
+}
+
+.body_text{
+
+  margin-top: 300px;
+  font-family: "OPEN SANS";
+  font-color: #ffffff;
+  font-size: larger;
+  font-weight: 300;
+  font-style: normal;
+
+}
+
+
+.picture1_to_right{
+
+  margin-top: 500px;
+
+
+}
+
+
+.picture_store_to_right{
+
+  margin-top: 1000px;
+
+
+}
+
+.box{
+  width: 200px;
+}
+
+.recipe-photo {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.recipe-img-container {
+    width: 100%;
+
+}
+
+.btn-primary {
+    background-color: #00142f;
+    padding-left:20px;
+}
