@@ -10,6 +10,6 @@ urlpatterns = patterns(
     url(r'^add-recipe/$', AddRecipe.as_view(), name='add-recipe'),
 
     # Handling media files
-    url(r'^media/(?P<path>.*)/$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
+    url(r'^media/photos/(?P<path>.*)/$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
 
 )
