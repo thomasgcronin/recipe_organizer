@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
@@ -59,7 +58,7 @@ WSGI_APPLICATION = 'recipe_organizer.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
-MEDIA_ROOT = '/Users/thomasgcronin77/dev/recipe_organizer/backend/apps/recipes/media'
+MEDIA_ROOT = BASE_DIR + '/apps/recipes/media'
 
 MEDIA_URL = '/media/'
 
@@ -86,6 +85,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
+STATIC_ROOT = BASE_DIR + '/staticfiles/'
 
 STATIC_URL = '/static/'
 
