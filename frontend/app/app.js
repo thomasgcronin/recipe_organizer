@@ -11,7 +11,7 @@ angular.module('myApp', [
     .config(['$routeProvider', 'RestangularProvider', function ($routeProvider, RestangularProvider) {
         $routeProvider.otherwise({redirectTo: '/recipes' + ''});
 
-        RestangularProvider.setBaseUrl('/api');
+        RestangularProvider.setBaseUrl(BASE_URL);
         RestangularProvider.setRequestSuffix('/');
 
     }]);
