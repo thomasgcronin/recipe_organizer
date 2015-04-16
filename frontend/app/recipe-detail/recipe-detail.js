@@ -32,9 +32,9 @@ angular.module('myApp.recipeDetail', ['ngRoute'])
         };
 
         $scope.fixImageUrl = function (url) {
-            console.log(url);
             var initial_portion = url.match(/http.*\/media/);
-            console.log(initial_portion);
-            return BASE_URL + '/media' + url.substr(initial_portion[0].length);
+            var new_url =  BASE_URL + '/media' + url.substr(initial_portion[0].length);
+            if (new_url[new_url.length - 1] !== '/') new_url += '/'; // add trailing slash
+            return new_url;
         };
     }]);

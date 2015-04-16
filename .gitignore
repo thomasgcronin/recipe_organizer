@@ -73,3 +73,5 @@ tmp
 .DS_Store
 .idea/
 *.orig
+
+frontend/app/settings.js
